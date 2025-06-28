@@ -20,9 +20,9 @@ app.use(helmet());
 // CORS middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173', // local dev
-    'https://blog-backend-production-1f0a.up.railway.app', // backend itself (optional)
-    'https://your-frontend-domain.com' // add your deployed frontend domain here when ready
+    'http://localhost:5173',
+    'https://blog-backend-production-1f0a.up.railway.app', 
+    'https://blogging-website-gamma-nine.vercel.app/'
   ],
   credentials: true
 }));
