@@ -182,9 +182,7 @@ const deletePost = async (req, res) => {
 // @access  Public
 const getAllPosts = async (req, res) => {
   try {
-    const posts = await Post.find({})
-      .sort({ createdAt: -1 })
-      .select('title slug createdAt updatedAt');
+    const posts = await Post.find().sort({ createdAt: -1 }).select('title slug content createdAt updatedAt');
 
     res.status(200).json({
       success: true,
