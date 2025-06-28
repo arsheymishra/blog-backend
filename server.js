@@ -22,7 +22,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://blog-backend-production-1f0a.up.railway.app', 
-    'https://blogging-website-gamma-nine.vercel.app/'
+    'https://blogging-website-gamma-nine.vercel.app'
   ],
   credentials: true
 }));
